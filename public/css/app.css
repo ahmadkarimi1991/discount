@@ -1,9 +1,37 @@
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: normal;
+  src: url(/fonts/YekanBakh-Regular.eot?1a1854606a05eb293122f3d17c0247d5);
+  src: url(/fonts/YekanBakh-Regular.eot?1a1854606a05eb293122f3d17c0247d5?#iefix) format("embedded-opentype"), url(/fonts/YekanBakh-Regular.woff2?bfb362716166f865d0327b105129084c) format("woff2"), url(/fonts/YekanBakh-Regular.woff?5d5019fe5a7fe2d50cce095c77317098) format("woff");
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url(/fonts/YekanBakh-Bold.eot?c876130a313d5e6b9b3a443f62d64d84);
+  src: url(/fonts/YekanBakh-Bold.eot?c876130a313d5e6b9b3a443f62d64d84?#iefix) format("embedded-opentype"), url(/fonts/YekanBakh-Bold.woff2?8c84ec442c2b313aaccfbd551bd05311) format("woff2"), url(/fonts/YekanBakh-Bold.woff?1d710da3a97376832f2b313be2f9e512) format("woff");
+}
 a {
   text-decoration: none;
 }
 
 img {
   display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+[dir=rtl] body {
+  font-family: YekanBakh;
 }
 
 .discount-header {
