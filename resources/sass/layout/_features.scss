@@ -1,0 +1,148 @@
+$features-bg: #f5f7fa;
+
+.discount-features {
+    background-color: $features-bg;
+    padding-top: $section-py;
+    padding-bottom: $section-py;
+
+    &__item {}
+
+    &__item-image {
+        text-align: center;
+        margin-bottom: 2.25rem;
+
+        svg {
+            max-width: 282px;
+            max-height: 211px;
+        }
+    }
+
+    &__item-content {}
+
+    &__item-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        color: #0b3a42;
+        margin-bottom: 1.5rem;
+
+        svg {
+            width: 45px;
+            height: 45px;
+            margin-left: .875rem;
+        }
+    }
+
+    &__item-text {
+        font-size: .875rem;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.625;
+        margin-bottom: 3.5rem;
+    }
+
+    &__item-links {}
+
+    &__item-button,
+    &__item-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        text-align: center;
+        height: 2rem;
+        padding-right: 2.125rem;
+        padding-left: 2.125rem;
+        border-radius: 9999px;
+    }
+
+    &__item-more {
+        background-color: transparent;
+        color: #1fc5b9;
+        border: 2px solid #1abbb0;
+        margin-bottom: 1rem;
+
+        svg {
+            margin-right: .5rem;
+        }
+
+        &:hover {
+            color: #1fc5b9;
+        }
+    }
+
+    &__item-button {
+        background-color: #1fc5b9;
+        color: #f5f7fa;
+        border: 2px solid transparent;
+
+        &:hover {
+            color: #f5f7fa;
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    .discount-features {
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__item-image {
+            order: 1;
+
+            svg {
+                max-width: 444px;
+                max-height: 332px;
+            }
+        }
+
+        &__item-content {
+            max-width: 464px;
+        }
+
+        &__item-title {
+            font-size: 2.5rem;
+            text-align: right;
+
+            svg {
+                width: 51px;
+                height: 51px;
+                margin-left: 1rem;
+            }
+        }
+
+        &__item-text {
+            font-size: 1rem;
+            text-align: right;
+            margin-bottom: 74px;
+        }
+
+        &__item-links {
+            display: flex;
+            align-items: center;
+        }
+
+        &__item-more {
+            display: unset;
+            justify-content: center;
+            align-items: center;
+            text-align: unset;
+            height: auto;
+            padding-right: 0;
+            padding-left: 0;
+            border: none;
+            border-radius: 0;
+            margin-bottom: 0;
+            order: 1;
+        }
+
+        &__item-button {
+            display: inline-flex;
+            margin-left: 1rem;
+        }
+    }
+}
