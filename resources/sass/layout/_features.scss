@@ -5,7 +5,11 @@ $features-bg: #f5f7fa;
     padding-top: $section-py;
     padding-bottom: $section-py;
 
-    &__item {}
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 4.75rem;
+        }
+    }
 
     &__item-image {
         text-align: center;
@@ -89,10 +93,15 @@ $features-bg: #f5f7fa;
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            &:not(:last-child) {
+                margin-bottom: 8.5rem;
+            }
         }
 
         &__item-image {
-            order: 1;
+            text-align: unset;
+            margin-bottom: 0;
 
             svg {
                 max-width: 444px;
