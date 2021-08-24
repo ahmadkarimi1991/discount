@@ -11032,6 +11032,10 @@ body {
 }
 
 @media (min-width: 992px) {
+  .discount-features {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
   .discount-features__item {
     display: flex;
     justify-content: space-between;

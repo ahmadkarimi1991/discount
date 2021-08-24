@@ -89,6 +89,9 @@ $features-bg: #f5f7fa;
 
 @media (min-width: 992px) {
     .discount-features {
+        padding-top: $section-py-sm;
+        padding-bottom: $section-py-sm;
+
         &__item {
             display: flex;
             justify-content: space-between;
