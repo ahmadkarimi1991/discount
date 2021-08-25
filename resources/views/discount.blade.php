@@ -14,6 +14,7 @@
 <body>
     @include('sections.header')
     @include('sections.features')
+    @include('sections.feedback')
     @include('sections.contactus')
 
     <script src="{{ asset('js/app.js') }}"></script>

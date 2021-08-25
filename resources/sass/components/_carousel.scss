@@ -1,0 +1,130 @@
+.carousel-wrapper {
+    overflow: hidden;
+    padding-top: 4.875rem;
+}
+
+.carousel {
+    position: relative;
+    transform-style: preserve-3d;
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1001;
+        stroke: #9db0cb;
+
+        &--prev {
+            left: 0;
+        }
+
+        &--next {
+            right: 0;
+        }
+    }
+
+    &__item {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+        z-index: 100;
+        transition: transform .4s, opacity .5s, z-index .5s;
+
+        &.initial,
+        &.active {
+            opacity: 1;
+            position: relative;
+            z-index: 900;
+        }
+
+        &.prev,
+        &.next {
+            z-index: 800;
+        }
+
+        &.prev {
+            transform: translateX(-100%);
+        }
+
+        &.next {
+            transform: translateX(100%);
+        }
+    }
+
+    &__item-content {
+        padding-top: 2.5rem;
+        padding-right: 1rem;
+        padding-bottom: 2.75rem;
+        padding-left: 1rem;
+        background-color: #fff;
+        border-radius: 1rem;
+    }
+
+    &__item-image {
+        margin-top: -82px;
+        text-align: center;
+    }
+
+    &__item-title,
+    &__item-text {
+        text-align: center;
+    }
+
+    &__item-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #0b3a42;
+        margin-bottom: .5rem;
+    }
+
+    &__item-text {
+        font-size: 14px;
+        font-weight: 500;
+        color: #155a6d;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .carousel {
+        &__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3rem;
+            height: 3rem;
+            background-color: rgba($color: #000000, $alpha: 0.05);
+            border-radius: 9999px;
+            stroke: #fff;
+        }
+
+        &__item {
+            padding-right: 5rem;
+            padding-left: 5rem;
+        }
+
+        &__item-content {
+            padding-right: 4.5rem;
+            padding-bottom: 4.5rem;
+            padding-left: 4.5rem;
+        }
+
+        &__item-image {
+            margin-right: -14.5px;
+            text-align: unset;
+        }
+
+        &__item-title,
+        &__item-text {
+            text-align: unset;
+        }
+
+        &__item-text {
+            font-size: 15px;
+        }
+    }
+}
