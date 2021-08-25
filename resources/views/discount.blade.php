@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    @include('sections.header')
+    @include('sections.intro')
     @include('sections.features')
     @include('sections.feedback')
     @include('sections.contactus')
