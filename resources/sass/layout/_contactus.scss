@@ -144,6 +144,8 @@ $contactus-bg: #0b3a42;
         margin-bottom: 1.25rem;
 
         svg {
+            color: #009191;
+            stroke: currentColor;
             margin-left: 1rem;
         }
     }
@@ -187,6 +189,14 @@ $contactus-bg: #0b3a42;
 
     &__packages--error {
         border-color: #fe5959;
+    }
+
+    &__packages--error &__packages-label {
+        color: #fe5959;
+
+        svg {
+            color: #fe5959;
+        }
     }
 
     &__button {

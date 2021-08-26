@@ -65,10 +65,10 @@
                         <div class="discount-contactus__packages-label">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                                 <g id="grid" transform="translate(-2.196 -2.196)">
-                                    <rect id="Rectangle_3245" data-name="Rectangle 3245" width="6" height="6" transform="translate(3.196 3.196)" fill="none" stroke="#76c5c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                    <rect id="Rectangle_3246" data-name="Rectangle 3246" width="6" height="6" transform="translate(13.196 3.196)" fill="none" stroke="#76c5c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                    <rect id="Rectangle_3247" data-name="Rectangle 3247" width="6" height="6" transform="translate(13.196 13.196)" fill="none" stroke="#76c5c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                    <rect id="Rectangle_3248" data-name="Rectangle 3248" width="6" height="6" transform="translate(3.196 13.196)" fill="none" stroke="#76c5c7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                    <rect id="Rectangle_3245" data-name="Rectangle 3245" width="6" height="6" transform="translate(3.196 3.196)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.5"/>
+                                    <rect id="Rectangle_3246" data-name="Rectangle 3246" width="6" height="6" transform="translate(13.196 3.196)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.5"/>
+                                    <rect id="Rectangle_3247" data-name="Rectangle 3247" width="6" height="6" transform="translate(13.196 13.196)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.5"/>
+                                    <rect id="Rectangle_3248" data-name="Rectangle 3248" width="6" height="6" transform="translate(3.196 13.196)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.5"/>
                                 </g>
                             </svg>
                             <span>بسته تخفیف انتخابی</span>
