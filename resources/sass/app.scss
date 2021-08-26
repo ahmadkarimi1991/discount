@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 @import 'abstracts/variables';
-@import 'abstracts/mixins';
+// @import 'abstracts/mixins';
 
 @import "~bootstrap/scss/bootstrap";
 
 @import 'base/fonts';
 @import 'base/reset';
-@import 'base/typography';
+// @import 'base/typography';
 
 @import 'layout/intro';
 @import 'layout/features';

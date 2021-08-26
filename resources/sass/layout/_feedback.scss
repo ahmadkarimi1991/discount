@@ -36,8 +36,8 @@ $feedback-bg: #eef2f7;
 
 @media (min-width: 992px) {
     .discount-feedback {
-        padding-top: $section-py-sm;
-        padding-bottom: $section-py-sm;
+        padding-top: $section-py-lg;
+        padding-bottom: $section-py-lg;
 
         &__title {
             font-size: 2.5rem;
