@@ -8,6 +8,11 @@ const fullname = document.getElementById('fullname');
 const email = document.getElementById('email');
 const mobile = document.getElementById('mobile');
 const company = document.getElementById('company');
+
+const cdn = document.getElementById('cdn');
+const storage = document.getElementById('storage');
+const vod = document.getElementById('vod');
+
 const button = document.getElementById('button');
 let isOkToFetch = true;
 
@@ -26,6 +31,10 @@ function checkInputs() {
     const emailValue = email.value.trim();
     const mobileValue = mobile.value.trim();
     const companyValue = company.value.trim();
+
+    const cdnValue = cdn.checked;
+    const storageValue = storage.checked;
+    const vodValue = vod.checked;
 
     // check if fullnameValue is empty
     if (fullnameValue === '') {
@@ -90,6 +99,18 @@ function checkInputs() {
                     {
                         'column': 'company',
                         'value': companyValue,
+                    },
+                    {
+                        'column': 'cdn',
+                        'value': cdnValue,
+                    },
+                    {
+                        'column': 'storage',
+                        'value': storageValue,
+                    },
+                    {
+                        'column': 'vod',
+                        'value': vodValue,
                     },
                 ],
             },
