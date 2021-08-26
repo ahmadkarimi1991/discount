@@ -50,14 +50,24 @@ $intro-bg: #20c5ba;
 
     &__header-link {
         color: #fafafa;
+        transition: color .15s ease-in-out;
 
         &:not(:first-child) {
             margin-right: 3rem;
+        }
+
+        &:hover {
+            color: #fff;
         }
     }
 
     &__header-login {
         color: #fff;
+        transition: color .15s ease-in-out;
+
+        &:hover {
+            color: #fff;
+        }
     }
 
     &__header-register,
@@ -75,6 +85,22 @@ $intro-bg: #20c5ba;
         color: #fff;
         background-color: rgba($color: #033432, $alpha: 0.1);
         border-radius: 1.125rem;
+        transition: background-color .15s ease-in-out, color .15s ease-in-out;
+
+        &:hover {
+            color: #fff;
+            background-color: rgba($color: #033432, $alpha: 0.25);
+        }
+    }
+
+    &__header-tel {
+        color: #fff;
+        stroke: currentColor;
+        transition: .15s ease-in-out;
+
+        &:hover {
+            color: #004545;
+        }
     }
 
     &__image {
@@ -120,6 +146,10 @@ $intro-bg: #20c5ba;
         // max-width: 18.5rem;
         // margin-right: auto;
         // margin-left: auto;
+
+        &:hover {
+            color: #0a3a42;
+        }
     }
 }
 
