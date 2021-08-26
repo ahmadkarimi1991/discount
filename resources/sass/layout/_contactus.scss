@@ -44,7 +44,7 @@ $contactus-bg: #0b3a42;
         -moz-appearance: none;
         appearance: none;
         border-radius: .25rem;
-        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        transition: all .15s ease-in-out;
 
         &:focus {
             outline: 0;
@@ -77,6 +77,43 @@ $contactus-bg: #0b3a42;
         background-color: transparent;
         border-top-right-radius: .25rem;
         border-bottom-right-radius: .25rem;
+
+        svg * {
+            transition: all .15s ease-in-out;
+        }
+
+        svg {
+            color: #009191;
+            stroke: currentColor;
+        }
+    }
+
+    &__form-control--error {
+        border-color: #fe5959;
+
+        &::placeholder {
+            color: #fe5959;
+        }
+
+        & + .discount-contactus__label {
+            svg {
+                color: #fe5959;
+            }
+        }
+    }
+
+    &__form-control--success {
+        border-color: #20c5ba;
+
+        &::placeholder {
+            color: #20c5ba;
+        }
+
+        & + .discount-contactus__label {
+            svg {
+                color: #20c5ba;
+            }
+        }
     }
 
     &__packages {
@@ -164,6 +201,12 @@ $contactus-bg: #0b3a42;
         border: none;
         outline: none;
         border-radius: .25rem;
+        transition: opacity .5s ease-in-out;
+
+        &:disabled {
+            opacity: .5;
+            cursor: not-allowed;
+        }
     }
 }
 

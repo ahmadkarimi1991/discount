@@ -21,6 +21,17 @@ $feedback-bg: #eef2f7;
         font-size: .875rem;
         color: #155a6d;
     }
+
+    &__image {
+        position: relative;
+        z-index: 9999;
+        margin-top: -1rem;
+
+        svg {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -34,6 +45,10 @@ $feedback-bg: #eef2f7;
 
         &__text {
             font-size: 18px;
+        }
+
+        &__image {
+            margin-top: -42px;
         }
     }
 }

@@ -1,5 +1,5 @@
 !(function () {
-    const itemClassName = "carousel__item";
+    const itemClassName = 'carousel__item';
     const items = document.querySelectorAll(`.${itemClassName}`);
     const totalItems = items.length;
     let slide = 0;
@@ -9,9 +9,9 @@
     function setInitialClasses() {
         // Targets the previous, current, and next items
         // This assumes there are at least three items.
-        items[totalItems - 1].classList.add("prev");
-        items[0].classList.add("active");
-        items[1].classList.add("next");
+        items[totalItems - 1].classList.add('prev');
+        items[0].classList.add('active');
+        items[1].classList.add('next');
     }
 
     // Set event listeners
@@ -105,9 +105,9 @@
                 items[oldNext].className = itemClassName;
 
                 // Add new classes
-                items[newPrevious].className = itemClassName + " prev";
-                items[slide].className = itemClassName + " active";
-                items[newNext].className = itemClassName + " next";
+                items[newPrevious].className = itemClassName + ' prev';
+                items[slide].className = itemClassName + ' active';
+                items[newNext].className = itemClassName + ' next';
             }
         }
     }
