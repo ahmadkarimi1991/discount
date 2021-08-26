@@ -76,17 +76,17 @@
 
                         <div class="discount-contactus__checkbox-wrapper">
                             <label class="discount-contactus__checkbox-item">
-                                <input type="checkbox" name="cdn" id="cdn" class="discount-contactus__checkbox">
+                                <input type="checkbox" name="package[]" id="cdn" value="cdn" class="discount-contactus__checkbox">
                                 <span>CDN بی‌نهایت</span>
                             </label>
 
                             <label class="discount-contactus__checkbox-item">
-                                <input type="checkbox" name="storage" id="storage" class="discount-contactus__checkbox">
+                                <input type="checkbox" name="package[]" id="storage" value="storage" class="discount-contactus__checkbox">
                                 <span>فضای ذخیره‌سازی ابری</span>
                             </label>
 
                             <label class="discount-contactus__checkbox-item">
-                                <input type="checkbox" name="vod" id="vod" class="discount-contactus__checkbox">
+                                <input type="checkbox" name="package[]" id="vod" value="vod" class="discount-contactus__checkbox">
                                 <span>پلتفرم ویدیویی/صوتی</span>
                             </label>
                         </div>
@@ -94,7 +94,7 @@
                 </div>
 
                 <div class="col-12">
-                    <button class="discount-contactus__button" id="button">ثبت درخواست</button>
+                    <button type="submit" class="discount-contactus__button" id="button">ثبت درخواست</button>
                 </div>
             </div>
         </form>

@@ -9,6 +9,10 @@ const email = document.getElementById('email');
 const mobile = document.getElementById('mobile');
 const company = document.getElementById('company');
 
+const packages = document.querySelector('.discount-contactus__packages');
+const checkbox = form.querySelectorAll('.discount-contactus__checkbox');
+let checked = 0;
+
 const cdn = document.getElementById('cdn');
 const storage = document.getElementById('storage');
 const vod = document.getElementById('vod');
@@ -21,6 +25,9 @@ form.addEventListener('submit', (e) => {
 
     // reset isOkToFetch
     isOkToFetch = true;
+
+    // reset checked
+    checked = 0;
 
     checkInputs();
 });
@@ -80,6 +87,23 @@ function checkInputs() {
         setSuccessFor(company);
     }
 
+    checkbox.forEach((item) => {
+        if (item.checked) {
+            checked++;
+        }
+    });
+
+    if (checked === 0) {
+        isOkToFetch = false;
+        console.log('لطفا حداقل یک گزینه را انتخاب کنید');
+        packages.classList.add('discount-contactus__packages--error');
+        return;
+    } else {
+        if (packages.classList.contains('discount-contactus__packages--error')) {
+            packages.classList.remove('discount-contactus__packages--error');
+        }
+    }
+
     const data = {
         'rows': [
             {
@@ -135,6 +159,9 @@ function checkInputs() {
 
             // enable the submit button
             button.disabled = false;
+
+            // reset form
+            form.reset();
         })
         .catch((error) => {
             console.error('Error: ', error);

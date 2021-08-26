@@ -185,6 +185,10 @@ $contactus-bg: #0b3a42;
         }
     }
 
+    &__packages--error {
+        border-color: #fe5959;
+    }
+
     &__button {
         display: flex;
         justify-content: center;
