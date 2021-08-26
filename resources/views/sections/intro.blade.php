@@ -71,7 +71,7 @@
             <div>
                 <h1 class="discount-intro__title">تخفیف ویژه‌ی محصولات ابر آروان</h1>
                 <div class="discount-intro__text">از ۵۰ تا ۸۰ درصد تخفیف تابستانی استفاده از فضای ذخیره‌سازی ابری، پلتفرم ویدیو و شبکه‌ی توزیع محتوا برای استارتاپ‌ها و کسب‌وکارهای آنلاین</div>
-                <a href="#" class="discount-intro__button">ثبت درخواست</a>
+                <a href="/#discount-contactus" class="discount-intro__button">ثبت درخواست</a>
             </div>
         </div>
     </div>

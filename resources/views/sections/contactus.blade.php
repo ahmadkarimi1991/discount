@@ -1,4 +1,4 @@
-<section class="discount-contactus">
+<section class="discount-contactus" id="discount-contactus">
     <div class="container">
         <div class="discount-contactus__text">برای استفاده از این تخفیف ویژه، اطلاعات خود را وارد کنید تا با شما تماس بگیریم</div>
         <div class="discount-contactus__date">فقط تا ۱۵ شهریور ۱۳۹۹</div>
